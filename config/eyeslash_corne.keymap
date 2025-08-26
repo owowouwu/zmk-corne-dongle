@@ -42,6 +42,15 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        toggle_sys {
+            bindings = <&mo 6>;
+            key-positions = <44 45>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -116,6 +125,16 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
-          
+
+        system {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &trans          &kp F7  &kp F8  &kp F9  &kp F10  &kp F10  &tog 3
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12  &tog 6
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans   &trans   &tog 0
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "SYS";
+        };
     };
 };
