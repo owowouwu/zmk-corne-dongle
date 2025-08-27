@@ -46,7 +46,7 @@
         compatible = "zmk,combos";
 
         toggle_sys {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <43 46>;
         };
     };
@@ -124,6 +124,17 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        sys {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &trans          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &tog 3
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp F12  &tog 6
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "SYS";
         };
     };
 };
