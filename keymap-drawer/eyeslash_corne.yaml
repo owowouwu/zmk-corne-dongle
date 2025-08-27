@@ -289,8 +289,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: OSX_NAV, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [43, 46]
+  k: OSX_NAV
